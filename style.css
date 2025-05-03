@@ -17,11 +17,13 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
   align-items: center;
+  height: 120px;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+
 }
 
 .buttons .nav-btn {
@@ -30,7 +32,7 @@ body {
   border: none;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -46,11 +48,11 @@ body {
   max-width: 400px;
 }
 
-.text-section h1 {
-  color: #24afb9;
+/*.text-section h1 {
+  color: #000000;
   font-size: 3rem;
   margin-bottom: 1rem;
-}
+}*/
 
 .subheading {
   font-size: 1.2rem;
@@ -68,8 +70,13 @@ body {
 }
 
 .image-section img {
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
+  margin-right: 400px;
+ 
+  
 }
-
+.logo2{
+  width: 80px;
+}
 
