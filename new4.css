@@ -1,8 +1,9 @@
- body {
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(216, 240, 252) ;
+    background-color:rgb(251, 254, 255) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@
     max-width: 450px;
 }
 .left-side h1 {
-    color: #84878a;
+    color: #393f45;
     font-size: 88px;
     margin-bottom: 20px;
     animation: slideFade 3s ease-in-out;
@@ -28,18 +29,13 @@
     color: #1c1e21;
 }
 .login-box {
-    background: #acc9e6;
+    background: #c0dcf8;
     padding: 30px 25px;
     border-radius: 28px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+ 
     width: 350px;
-    border: 1px solid #1c1c1d;
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.7);
-    height: 70vh;
 }
-
-
-
 .login-box input {
     width: 90%;
     padding: 24px;
@@ -49,11 +45,10 @@
     font-size: 16px;
     color: #17202a;
 }
-   
 .login-box button {
     width: 100%;
     background-color: #3b3c3d;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 14px;
     font-size: 18px;
@@ -61,9 +56,6 @@
     border-radius: 16px;
     cursor: pointer;
     margin-top: 10px;
-    ali
-    
-
 }
 .login-box button:hover {
     background-color: #010b18;
@@ -72,11 +64,8 @@
     text-align: center;
     margin-top: 12px;
 }
-.forgot-password a:hover {
-    color:  #0a0a0a ;
-}
 .forgot-password a {
-    color: #34495e;
+    color: #020407;
     text-decoration: none;
     font-size: 14px;
 }
@@ -107,6 +96,9 @@ h2{
     color: #606770;
     animation: slideInLeft 4s ease-out;
    
+}
+.forgot-password a:hover {
+    color:  #0f3beb ;
 }
 @keyframes slideFade {
 0% {
