@@ -5,8 +5,8 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #0e0e0e;
-  color: white;
+  background-color: #fff;
+  color: #222;
   line-height: 1.6;
 }
 
@@ -25,7 +25,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(63, 119, 204, 0.7); */
 }
 .hero-content {
   position: relative;
@@ -35,10 +35,11 @@ body {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  color: #1e1c99;
 }
 .btn-primary {
   padding: 0.75rem 2rem;
-  background: #2563eb;
+  background: #3f77cc;
   color: white;
   border: none;
   text-decoration: none;
@@ -49,10 +50,13 @@ body {
 .about {
   padding: 3rem 2rem;
   text-align: center;
+  background: rgb(155, 189, 240);
+  /* color:#fff; */
 }
 .about h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color:  #3f77cc;
 }
 .features {
   display: flex;
@@ -62,32 +66,39 @@ body {
   margin-top: 2rem;
 }
 .card {
-  background: #1a1a1a;
+  background: #3f77cc;
   padding: 1.5rem;
   border-radius: 12px;
   width: 280px;
+  border: none;
+  color: #fff;
 }
 .card h3 {
   margin: 1rem 0 0.5rem;
+  color:#fff;
 }
 .card .icon {
   font-size: 2rem;
+  color: #fff;
 }
 
 .stories {
   padding: 3rem 2rem;
   text-align: center;
+    background: #e6e8eb;
 }
 .testimonial {
-  background: #1a1a1a;
+  background: #3f77cc;
+  color: #fff;
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 2rem;
   max-width: 600px;
   margin-inline: auto;
+  border: none;
 }
 .btn-secondary {
-  background: #333;
+  background: #3a0ddd;
   color: white;
   padding: 0.75rem 2rem;
   text-decoration: none;
@@ -96,11 +107,11 @@ body {
 }
 
 footer {
-  background: #111;
+  background: #3f77cc;
   padding: 1.5rem 2rem;
   text-align: center;
   font-size: 0.875rem;
-  color: #aaa;
+  color: #fff;
 }
 footer .links,
 footer .socials {
@@ -109,6 +120,6 @@ footer .socials {
 footer .links a,
 footer .socials a {
   margin: 0 0.5rem;
-  color: #aaa;
+  color: #fff;
   text-decoration: none;
 }
