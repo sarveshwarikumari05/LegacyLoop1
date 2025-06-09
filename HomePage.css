@@ -121,7 +121,62 @@ body {
 .btn-secondary:hover {
   background: #1e1c99;
 }
-/* FAQ Section */
+
+.team {
+  padding: 2.5rem 0 2rem 0;
+  background: #f4f7fb;
+  text-align: center;
+}
+.team h2 {
+  color: #3f77cc;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.member {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(63,119,204,0.10);
+  padding: 1.5rem 2.5rem;
+  min-width: 180px;
+  width: 200px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1.5px solid #e6e8eb;
+  margin-bottom: 0;
+}
+.member img {
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+}
+.member h3 {
+  color: #1e1c99;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.member p {
+  color: #3f77cc;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+.member:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(63,119,204,0.18);
+  border-color: #3f77cc;
+} 
+
+
 .faq {
   padding: 3rem 2rem;
   background: #f4f7fb;
