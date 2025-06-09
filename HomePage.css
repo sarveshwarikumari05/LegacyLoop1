@@ -74,10 +74,10 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   width: 280px;
-  border: 2px solid #3f77cc;
-  box-shadow: 0 8px 32px rgba(63,119,204,0.18);
+ border: 1.5px solid #e6e8eb;
+  box-shadow: 0 4px 16px rgba(63,119,204,0.10);
   color: #1e1c99;
-  transition: box-shadow 0.3s, transform 0.2s;
+ transition: transform 0.2s, box-shadow 0.2s;
 }
 .card h3 {
   margin: 1rem 0 0.5rem;
@@ -88,8 +88,9 @@ body {
   color: #3a0ddd;
 }
 .card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 16px 40px rgba(63,119,204,0.25);
+ transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(63,119,204,0.18);
+  border-color: #3f77cc;
 }
 
 .stories {
@@ -119,6 +120,51 @@ body {
 }
 .btn-secondary:hover {
   background: #1e1c99;
+}
+/* FAQ Section */
+.faq {
+  padding: 3rem 2rem;
+  background: #f4f7fb;
+  text-align: center;
+}
+.faq h2 {
+  color: #3f77cc;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(63,119,204,0.08);
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #3f77cc;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.faq-item[open] {
+  box-shadow: 0 4px 16px rgba(63,119,204,0.13);
+}
+.faq-item summary {
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.1rem;
+  color: #1e1c99;
+  font-weight: 600;
+  outline: none;
+  user-select: none;
+  background: none;
+  border: none;
+}
+.faq-item p {
+  padding: 0 1.5rem 1rem 1.5rem;
+  color: #222;
+  margin: 0;
 }
 
 footer {
