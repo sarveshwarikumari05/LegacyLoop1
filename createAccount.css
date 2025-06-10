@@ -1,64 +1,115 @@
- body {
-    margin-top: 20px;
-    padding: 20px;
-    height: 80vh;
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e6e8eb;
-    font-family: Arial, sans-serif;
-  }
-  .form-container {
-    background: rgb(155, 189, 240);
+    background: #eaf4fb;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.form-container {
+    background: #fff;
     padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(63,119,204,0.10);
     width: 100%;
     max-width: 400px;
     text-align: center;
-  }
-  h2 {
-    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+h1 {
     color: #3f77cc;
-    font-size: ;
-    margin: 2px;
-  }
-  h1{
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-bottom: 20px;
     color: #1e1c99;
-    font-size: 65px;
-   
-    max-width: 8px;
-    margin: 22px;
-    padding: 10px;
-  }
-  input {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+input, select {
     width: 100%;
     padding: 12px 10px;
     margin: 10px 0;
-    border: 1px solid #107bd3;
+    border: 1.5px solid #3f77cc;
     border-radius: 8px;
     font-size: 16px;
-  }
-  button {
+    background: #f4f7fb;
+    color: #222;
+    transition: border 0.2s;
+    outline: none;
+    animation: inputFade 1.2s;
+}
+
+input:focus, select:focus {
+    border: 1.5px solid #1e1c99;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 2px 2px;
+    color: #3f77cc;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #3f77cc;
+    background-color: #3a0ddd;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     margin-top: 15px;
     cursor: pointer;
+    font-weight: 600;
     transition: background 0.3s;
-  }
-  button:hover {
-    background-color: #3a0ddd;
-  }
-  select{
-    width: 32%;
-    height: 32px;
-    border-radius: 6px;
-    background-origin: 1px solid #107bd3;
-    color: rgb(100, 100, 97);
+    animation: inputFade 1.2s;
+}
 
-  }
+button[type="submit"]:hover {
+    background-color: #1e1c99;
+}
+
+::placeholder {
+    color: #3f77cc;
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        padding: 20px 8px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes inputFade {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+}

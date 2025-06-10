@@ -1,117 +1,156 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color:rgb(251, 254, 255) ;
+    background-color: #eaf4fb;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 80px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(63,119,204,0.10);
+    padding: 40px 30px;
+    animation: fadeInUp 1s;
 }
+
 .left-side {
-    max-width: 450px;
+    max-width: 350px;
+    text-align: left;
+    animation: slideFade 1.2s;
 }
 .left-side h1 {
-    color: #393f45;
-    font-size: 88px;
-    margin-bottom: 20px;
-    animation: slideFade 3s ease-in-out;
+    color: #3f77cc;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
-.left-side p {
-    font-size: 22px;
-    color: #1c1e21;
+.left-side h2 {
+    color: #1e1c99;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0;
 }
+
 .login-box {
-    background: #c0dcf8;
-    padding: 30px 25px;
-    border-radius: 28px;
- 
-    width: 350px;
-    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.7);
-}
-.login-box input {
-    width: 90%;
-    padding: 24px;
-    margin-bottom: 8px;
-    border: 1px solid #1c1c1d;
+    background: #f4f7fb;
+    padding: 32px 28px 24px 28px;
     border-radius: 18px;
-    font-size: 16px;
-    color: #17202a;
+    box-shadow: 0 4px 24px rgba(63,119,204,0.13);
+    width: 320px;
+    border: 1.5px solid #3f77cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1.2s;
 }
-.login-box button {
+
+.login-box form {
     width: 100%;
-    background-color: #3b3c3d;
-    color: rgb(255, 255, 255);
-    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box input {
+    width: 100%;
     padding: 14px;
-    font-size: 18px;
+    margin-bottom: 14px;
+    border: 1.5px solid #3f77cc;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #17202a;
+    background: #fff;
+    outline: none;
+    transition: border 0.2s;
+    animation: inputFade 1.2s;
+}
+.login-box input:focus {
+    border: 1.5px solid #1e1c99;
+}
+
+.login-box button[type="submit"] {
+    width: 100%;
+    background-color: #3a0ddd;
+    color: white;
+    border: none;
+    padding: 13px;
+    font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 16px;
+    border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 4px;
+    transition: background 0.2s;
+    animation: inputFade 1.2s;
 }
-.login-box button:hover {
-    background-color: #010b18;
+.login-box button[type="submit"]:hover {
+    background-color: #1e1c99;
 }
+
 .forgot-password {
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 .forgot-password a {
-    color: #020407;
+    color: #3f77cc;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.98rem;
+    transition: color 0.2s;
 }
+.forgot-password a:hover {
+    color: #1e1c99;
+}
+
 .create-account {
-    margin-top: 20px;
+    margin-top: 18px;
     text-align: center;
 }
 .create-account button {
-    background-color: #17202a;
+    background-color: #3f77cc;
+    color: #fff;
     width: auto;
-    padding: 12px 20px;
-    font-size: 12px;
+    padding: 10px 22px;
+    font-size: 1rem;
     border-radius: 40px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    animation: inputFade 1.2s;
+}
+.create-account button:hover {
+    background-color: #1e1c99;
+}
 
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 30px 10px;
+    }
+    .left-side {
+        text-align: center;
+        max-width: 100%;
+    }
 }
-.bottom-text {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: #606770;
-}
-.bottom-text a {
-    color: #1c1e21;
-    font-weight: bold;
-    text-decoration: none;
-}
-h2{
-    color: #606770;
-    animation: slideInLeft 4s ease-out;
-   
-}
-.forgot-password a:hover {
-    color:  #0f3beb ;
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
 }
 @keyframes slideFade {
-0% {
-opacity: 0;
-transform: translateY(-50px);
+    0% { opacity: 0; transform: translateY(-40px);}
+    100% { opacity: 1; transform: translateY(0);}
 }
-100% {
-opacity: 1;
-transform: translateY(0);
+@keyframes inputFade {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
 }
-}
-@keyframes slideInLeft {
-0% { transform: translateX(-100px); opacity: 0; }
-100% { transform: translateX(0); opacity: 1; }
-}
-

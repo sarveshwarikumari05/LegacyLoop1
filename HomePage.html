@@ -8,6 +8,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <span class="nav-logo"><a href="#">Legacy Loop</a></span>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="/createAccount.html" class="nav-btn">Register</a></li>
+    </ul>
+  </div>
+</nav>
   <header class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
@@ -16,99 +32,123 @@
     </div>
   </header>
 
+
   <main>
-    <section class="about">
-      <h2>About</h2>
-      <p>Connecting alumni and students for a thriving, lifelong community.</p>
-      <div class="features">
-        <div class="card">
-          <i class="icon">👥</i>
-          <h3>Alumni Directory</h3>
-          <p>Find and connect with fellow graduates.</p>
-        </div>
-        <div class="card">
-          <i class="icon">⭐</i>
-          <h3>Student Mentorship</h3>
-          <p>Guide the next generation with your expertise.</p>
-        </div>
-        <div class="card">
-          <i class="icon">💼</i>
-          <h3>Job Board</h3>
-          <p>Explore job and internship opportunities.</p>
-        </div>
-      </div>
-    </section>
+    <!-- About Section -->
+<section class="about" id="about">
+  <h2>About</h2>
+  <p>Connecting alumni and students for a thriving, lifelong community.</p>
+  <div class="features">
+    <div class="card">
+      <i class="icon">👥</i>
+      <h3>Alumni Directory</h3>
+      <p>Find and connect with fellow graduates.</p>
+    </div>
+    <div class="card">
+      <i class="icon">⭐</i>
+      <h3>Student Mentorship</h3>
+      <p>Guide the next generation with your expertise.</p>
+    </div>
+    <div class="card">
+      <i class="icon">💼</i>
+      <h3>Job Board</h3>
+      <p>Explore job and internship opportunities.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="stories">
-      <h2>Success Stories</h2>
-      <div class="testimonial">
-        <p>Through the alumni network, I secured my dream job and gained invaluable mentors along the way.</p>
-      </div>
-      <a href="/createAccount.html" class="btn-secondary">Register Now</a>
-    </section>
-    
-    <section class="team">
-      <h2>Meet the Team</h2>
-      <div class="team-grid">
-        <div class="member">
-          <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
-          <h3>Anuj Kumar</h3>
-          <p>Team Leader</p>
-        </div>
-        <div class="member">
-          <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
-          <h3>Ayush Raj Kushwaha</h3>
-          <p>Frontend developer</p>
-        </div>
-        <div class="member">
-          <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
-          <h3>Aishwarya</h3>
-          <p>Backend developer</p>
-        </div>
-        <div class="member">
-          <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
-          <h3>Divya </h3>
-          <p>Database Manager</p>
-        </div>
-        <div class="member">
-          <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
-          <h3>Aditya Kumar</h3>
-          <p>Ai developer</p>
-        </div>
-        <div class="member">
-          <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
-          <h3>Sarveshwari Kumari</h3>
-          <p>Frontend developer</p>
-        </div>
-      </div>
-    </section>
+<!-- Mission Section -->
+<section class="mission" id="mission">
+  <h2>Our Mission</h2>
+  <p>
+    The Alumni Network is built to bridge the gap between past and present,
+    creating a strong, thriving community where experience meets enthusiasm.
+    We aim to support career growth, share knowledge, and foster lifelong
+    relationships among alumni and students.
+  </p>
+</section>
 
-    <section class="faq">
-        <h2>FAQ</h2>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>How do I join the alumni network?</summary>
-          <p>Click on the "Join Now" or "Register Now" button and fill out the registration form to become a member.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is there any membership fee?</summary>
-          <p>No, joining the alumni network is completely free for all graduates and students.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How can I contact other alumni?</summary>
-          <p>Use the Alumni Directory feature to search and connect with fellow graduates.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Can I post job opportunities?</summary>
-          <p>Yes, registered members can share job and internship opportunities on the Job Board.</p>
-        </details>
-      </div>
-    </section>
-     
+<!-- Goals Section -->
+<section class="goals" id="goals">
+  <h2>What We Do?</h2>
+  <ul>
+    <li>👥 Connect alumni and students for mentorship and guidance</li>
+    <li>🎯 Organize virtual and physical alumni meetups</li>
+    <li>💼 Provide job and internship opportunities</li>
+    <li>📚 Promote knowledge sharing through talks and webinars</li>
+  </ul>
+</section>
+<section class="stories">
+  <h2>Success Stories</h2>
+  <div class="testimonial">
+    <p>Through the alumni network, I secured my dream job and gained invaluable mentors along the way.</p>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="team" id="team">
+  <h2>Meet the Team</h2>
+  <div class="team-grid">
+    <div class="member">
+      <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
+      <h3>Anuj Kumar</h3>
+      <p>Team Leader</p>
+    </div>
+    <div class="member">
+      <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
+      <h3>Ayush Raj Kushwaha</h3>
+      <p>Frontend developer</p>
+    </div>
+    <div class="member">
+      <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
+      <h3>Aishwarya</h3>
+      <p>Backend developer</p>
+    </div>
+    <div class="member">
+      <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
+      <h3>Divya </h3>
+      <p>Database Manager</p>
+    </div>
+    <div class="member">
+      <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
+      <h3>Aditya Kumar</h3>
+      <p>Ai developer</p>
+    </div>
+    <div class="member">
+      <!-- <img src="https://via.placeholder.com/80" alt="Team Member"/> -->
+      <h3>Sarveshwari Kumari</h3>
+      <p>Frontend developer</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <h2>FAQ</h2>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>How do I join the alumni network?</summary>
+      <p>Click on the "Join Now" or "Register Now" button and fill out the registration form to become a member.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is there any membership fee?</summary>
+      <p>No, joining the alumni network is completely free for all graduates and students.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How can I contact other alumni?</summary>
+      <p>Use the Alumni Directory feature to search and connect with fellow graduates.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I post job opportunities?</summary>
+      <p>Yes, registered members can share job and internship opportunities on the Job Board.</p>
+    </details>
+  </div>
+</section>
+   
   </main>
 
   <footer>
-    <p>&copy; 2024</p>
+    <p>&copy; 2025</p>
     <div class="links">
       <a href="#">Privacy</a>
       <a href="#">Terms</a>
@@ -119,5 +159,12 @@
       <a href="#">💼</a>
     </div>
   </footer>
+  <script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-toggle').checked = false;
+    });
+  });
+</script>
 </body>
 </html>
